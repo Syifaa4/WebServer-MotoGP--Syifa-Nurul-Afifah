@@ -75,7 +75,7 @@ const server = http.createServer((req,res) =>{
         res.write(JSON.stringify(names));
     }
     else{
-        res.write("<h1>Bad Result</h1>");
+        res.write("<h1>Bad Request</h1>");
     }
     res.end();
 })
